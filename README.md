@@ -1,4 +1,5 @@
-# Matrimony: A Project Developed During Infosys Internship
+# Matrimony: Connecting Hearts❤️
+
 # Angular Frontend and Spring API
 
 This repository contains an Angular frontend and a Spring API. Follow the instructions below to set up and run both applications.
@@ -51,3 +52,5 @@ Once both the frontend and API servers are running, you can access the applicati
 - You might need to configure CORS settings on the Spring API if the frontend and API are hosted on different domains in a production environment.
 - Ensure that your environment meets all the prerequisites mentioned above before attempting to run the applications.
 
+---
+Made with ❤️ during Infosys internship.
