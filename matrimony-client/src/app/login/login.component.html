@@ -1,0 +1,37 @@
+<div class="container-fluid login-container">
+    <div class="row">
+      <div class="col-md-6 login-form-container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center login">Login</h3>
+          </div>
+          <div class="card-body">
+            <form [formGroup]= "loginForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password"  formControlName="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mb-3 mt-3" [disabled]="!loginForm.valid">Login</button>
+            </form>
+            <div class="text-center">
+              <a routerLink="/forgetpass" routerLinkActive="active">Forgot Password?</a>
+            </div>
+            <hr>
+            <div class="text-center">
+              <button class="btn btn-google mr-3"><i class="fab fa-google"></i> Login with Google</button>
+              <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 login-bg-container">
+        <!-- <img src="../../assets/pexels-katerina-holmes-5910809.jpg" alt="Background Image"> -->
+      </div>
+    </div>
+  </div>
+  

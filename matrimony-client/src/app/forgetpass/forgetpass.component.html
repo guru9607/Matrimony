@@ -1,0 +1,26 @@
+
+<div class="container-fluid login-container">
+    <div class="row">
+      <div class="col-md-6 login-form-container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center login">Login</h3>
+          </div>
+          <div class="card-body">
+            <form (submit)="onSubmit($event)">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email"  required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mb-3 mt-3">Send confirmation link</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 login-bg-container">
+        <!-- <img src="../../assets/pexels-katerina-holmes-5910809.jpg" alt="Background Image"> -->
+      </div>
+    </div>
+  </div>
+  
