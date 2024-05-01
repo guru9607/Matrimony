@@ -5,8 +5,9 @@ import com.infosys.matrimony.entity.*;
 
 public interface RegistrationService {
 
-	public List<Registration> getAllRegistrations();
-	public Registration addRegistration(Registration registration);
-    public Registration getRegistraionInfoById(Long id);
-    public void deleteRegistration(Long id);
+    Registration saveRegistration(Registration registration);
+    Registration getRegistrationById(Long id);
+    List<Registration> getAllRegistrations();
+    Registration updateRegistration(Long id, Registration updatedRegistration);
+    void deleteRegistration(Long id);
 }
